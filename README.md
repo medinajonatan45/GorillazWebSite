@@ -2,7 +2,7 @@
 ![Screen Shot]()
 
 ## Descripción
-Sitio web de la banda Gorillaz realizado en HTML con base a la metodología BEM y las herramientas de SASS.  
+Sitio web de la banda Gorillaz realizado en HTML y PHP con base a la metodología BEM y las herramientas de SASS.  
 * [Ver en vivo]()
 ## Autor 
 Jonatan Ruben

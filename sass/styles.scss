@@ -1,5 +1,13 @@
 // ***** Variables: Colores ***** //
-$primary-color:#5DC1E0;
+$basic-color:#5DC1E0;
+$primary-color:#005c81;
+$secundary-color:#d40f60;
+$tertiary-color:#f84339;
+$quaternary-color:#e79a32;
+$quinary-color:#368986;
+$senary-color:#E90832;
+$septenary-color:rgb(24, 24, 24);
+$octonary-color:rgb(11, 11, 11);
 
 // ***** Variables: Fuentes ***** //
 $primary-text-font:arial black;
@@ -30,7 +38,7 @@ $secundary-text-font:'Darumadrop One', cursive;
 }
 // Styles: Hero
 .hero{
-    background-color: $primary-color;
+    background-color: $basic-color;
     width: 100%;
     height: 100vh;
 
