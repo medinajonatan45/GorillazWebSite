@@ -1,0 +1,93 @@
+// ***** Variables: Colores ***** //
+$primary-color:#5DC1E0;
+
+// ***** Variables: Fuentes ***** //
+$primary-text-font:arial black;
+$secundary-text-font:'Darumadrop One', cursive;
+
+// ***** Mixin: Flex, Grid and media ***** //
+// Flex**
+@mixin Flex-System($direction, $justy, $align, $wrap, $gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justy;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+// Media Screen**
+@mixin Media-Screen($width){
+    @media (max-width:$width){
+        @content;
+    }
+}
+
+// Styles Generales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// Styles: Hero
+.hero{
+    background-color: $primary-color;
+    width: 100%;
+    height: 100vh;
+
+    &__figure{
+        width: 35%;
+        min-width: 15rem;
+        height: 100%;
+    }
+    &__figcaption{
+        text-align: center;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+        object-fit: scale-down;
+
+        &--img{
+            @include Media-Screen(720px){
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__a{
+        font-family: $primary-text-font;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        transition:all 0.3s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.hero__section{
+    &--img{
+        // background-color: yellow;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        @include Media-Screen(720px){
+            @include Flex-System(column, flex-end, center, nowrap, 0);
+        }
+    }
+    &--logo{
+        // background-color: red;
+        position:absolute;
+        top: 60vh;
+        width: 100%;
+        filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+        @include Flex-System(row, center, center, nowrap, 0);
+        @include Media-Screen(500px){top:20vh;}
+
+    }
+}

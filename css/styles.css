@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-color: #5DC1E0;
+  width: 100%;
+  height: 100vh;
+}
+.hero__figure {
+  width: 35%;
+  min-width: 15rem;
+  height: 100%;
+}
+.hero__figcaption {
+  text-align: center;
+}
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+@media (max-width: 720px) {
+  .hero__img--img {
+    width: 100%;
+    height: auto;
+  }
+}
+.hero__a {
+  font-family: arial black;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.hero__a:hover {
+  transform: scale(1.1);
+}
+
+.hero__section--img {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+@media (max-width: 720px) {
+  .hero__section--img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+}
+.hero__section--logo {
+  position: absolute;
+  top: 60vh;
+  width: 100%;
+  filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+@media (max-width: 500px) {
+  .hero__section--logo {
+    top: 20vh;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
