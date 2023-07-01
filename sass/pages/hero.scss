@@ -1,0 +1,69 @@
+// ***** Colores y fuentes ***** //
+@use '../tools/colors' as c;
+
+// // ***** Mixin: Flex, Grid and media ***** //
+@use '../tools/mixins' as mix;
+
+// Styles: Hero
+.hero{
+    background-color: c.$basic-color;
+    width: 100%;
+    height: 100vh;
+
+    &__figure{
+        width: 35%;
+        min-width: 15rem;
+        height: 100%;
+    }
+    &__figcaption{
+        text-align: center;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+        object-fit: scale-down;
+
+        &--img{
+            @include mix.Media-Screen(720px){
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__a{
+        font-family: c.$primary-text-font;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        transition:all 0.3s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.hero__section{
+    &--img{
+        // background-color: yellow;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        @include mix.Media-Screen(720px){
+            @include mix.Flex-System(column, flex-end, center, nowrap, 0);
+        }
+    }
+    &--logo{
+        // background-color: red;
+        position:absolute;
+        top: 60vh;
+        width: 100%;
+        filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+        @include mix.Flex-System(row, center, center, nowrap, 0);
+        @include mix.Media-Screen(500px){top:20vh;}
+
+    }
+}

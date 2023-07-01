@@ -1,5 +1,5 @@
 # Gorillaz Web Site
-![Screen Shot]()
+![Screen Shot](img/screenshot.png)
 
 ## Descripción
 Sitio web de la banda Gorillaz realizado en HTML y PHP con base a la metodología BEM y las herramientas de SASS.  
