@@ -1,12 +1,12 @@
 // ***** Colores y fuentes ***** //
-@use '../tools/colors' as c;
+@use '../tools/colors' as h;
 
 // // ***** Mixin: Flex, Grid and media ***** //
-@use '../tools/mixins' as mix;
+@use '../tools/mixins' as mixh;
 
-// Styles: Hero
+// Styles: Hero *****
 .hero{
-    background-color: c.$basic-color;
+    background-color: h.$basic-color;
     width: 100%;
     height: 100vh;
 
@@ -25,14 +25,14 @@
         object-fit: scale-down;
 
         &--img{
-            @include mix.Media-Screen(720px){
+            @include mixh.Media-Screen(720px){
                 width: 100%;
                 height: auto;
             }
         }
     }
     &__a{
-        font-family: c.$primary-text-font;
+        font-family: h.$primary-text-font;
         display: block;
         font-size: 1.5rem;
         font-weight: bold;
@@ -52,8 +52,8 @@
         height: 100vh;
         width: 100vw;
         overflow: hidden;
-        @include mix.Media-Screen(720px){
-            @include mix.Flex-System(column, flex-end, center, nowrap, 0);
+        @include mixh.Media-Screen(720px){
+            @include mixh.Flex-System(column, flex-end, center, nowrap, 0);
         }
     }
     &--logo{
@@ -62,8 +62,8 @@
         top: 60vh;
         width: 100%;
         filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
-        @include mix.Flex-System(row, center, center, nowrap, 0);
-        @include mix.Media-Screen(500px){top:20vh;}
+        @include mixh.Flex-System(row, center, center, nowrap, 0);
+        @include mixh.Media-Screen(500px){top:20vh;}
 
     }
 }

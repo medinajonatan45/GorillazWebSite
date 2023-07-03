@@ -1,0 +1,21 @@
+.sub-section{
+    // background-color: red;
+    &__background{
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100%;
+    }
+    &__text{
+        // background-color: yellow;
+        text-align: center;
+    }
+    &__title{
+        // background-color: green;
+        text-align: center;
+    }
+    &__h2{
+        margin-bottom: 1rem;
+    }
+    &__ul{
+        list-style: none;
+    }
+}

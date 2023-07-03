@@ -1,0 +1,16 @@
+// section-full
+.section-full{
+    height: 40rem;
+
+    &__text{
+        padding: 1.5rem 0rem;
+        // background-color: red;
+    }
+    &__img{
+        object-fit: scale-down;
+        // background-color: yellow;
+    }
+    &__ul{
+        list-style: none;
+    }
+}

@@ -1,12 +1,17 @@
+// ***** Componentes ***** //
+@forward 'components/header-nav.scss';
+@forward 'components/banner.scss';
+@forward 'components/section-full.scss';
+@forward 'components/section-big.scss';
+@forward 'components/sub-section.scss';
+
 // ***** Paginas ***** //
 @forward 'pages/hero.scss';
-@forward 'pages/home.scss';
+@forward 'pages/about.scss';
 
-// ***** Componentes *****
-@forward 'components/header-nav.scss';
-
-
-// Styles Generales
+// ***************************** Styles *********************/
+// Styles: Generales *****
+// HTML
 *{
     margin: 0;
     padding: 0;
