@@ -1,21 +1,32 @@
 .sub-section{
     // background-color: red;
     &__background{
-        background-color: rgba(0, 0, 0, 0.2);
+        // background-color: rgba(0, 0, 0, 0.2);
         height: 100%;
     }
     &__text{
         // background-color: yellow;
         text-align: center;
+        font-family: arial;
     }
     &__title{
         // background-color: green;
         text-align: center;
+        font-family: arial;
     }
     &__h2{
         margin-bottom: 1rem;
+        font-family: arial;
     }
     &__ul{
         list-style: none;
+    }
+    &__img{
+        object-fit: scale-down;
+        // background-color: brown;
+    }
+    &__description{
+        font-family: arial;
+        font-size: 1.1rem;
     }
 }

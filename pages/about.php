@@ -30,6 +30,10 @@ require('../layout/header-nav.html');
         </section>
     </section>
     
+    <section class="section__medium section__medium--space-bar">
+        <h2 class="section__h2 section__h2--space-bar">Band</h2>
+    </section>
+
     <section class="section-big section-big--about">
         <section class="sub-section sub-section--about-img">
             <div class="sub-section__background"></div>
@@ -57,6 +61,75 @@ require('../layout/header-nav.html');
                 </article>
             </section>
         </section>
+    </section>
+
+    <section class="section section--about">
+        <section class="section__medium section__medium--about-character-1">
+            <div class="sub-section__description sub-section__description--about sub-section__description--about--character-1">
+                <h2 class="sub-section__h2 sub-section__h2--character">2-D</h2>
+                <article class="sub-section__article">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                    </p>
+                </article>
+            </div>
+
+            <div class="sub-section__photo">
+                <img src="../img/about/2D.png" alt="2-D" class="sub-section__img" width="100%" height="100%">
+            </div>
+        </section>
+
+        <section class="section__medium section__medium--about-character-2">
+            <div class="sub-section__photo sub-section__photo--screen-big">
+                <img src="../img/about/murdoc.png" alt="Murdoc" class="sub-section__img" width="100%" height="100%">
+            </div>
+
+            <div class="sub-section__description sub-section__description--about sub-section__description--about--character-2">
+                <h2 class="sub-section__h2 sub-section__h2--character">Murdoc</h2>
+                <article class="sub-section__article">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                    </p>
+                </article>
+            </div>
+            <div class="sub-section__photo sub-section__photo--screen-small">
+                <img src="../img/about/murdoc.png" alt="Murdoc" class="sub-section__img" width="100%" height="100%">
+            </div>
+        </section>
+
+        <section class="section__medium section__medium--about-character-3">
+            <div class="sub-section__description sub-section__description--about sub-section__description--about--character-3">
+                <h2 class="sub-section__h2 sub-section__h2--character">Noodle</h2>
+                <article class="sub-section__article">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                    </p>
+                </article>
+            </div>
+
+            <div class="sub-section__photo">
+                <img src="../img/about/noodle.png" alt="Noodle" class="sub-section__img" width="100%" height="100%">
+            </div>
+        </section>
+
+        <section class="section__medium section__medium--about-character-4">
+            <div class="sub-section__photo sub-section__photo--screen-big">
+                <img src="../img/about/russel.png" alt="Russel" class="sub-section__img" width="100%" height="100%">
+            </div>
+
+            <div class="sub-section__description sub-section__description--about sub-section__description--about--character-4">
+                <h2 class="sub-section__h2 sub-section__h2--character">Russel</h2>
+                <article class="sub-section__article">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                    </p>
+                </article>
+            </div>
+            <div class="sub-section__photo sub-section__photo--screen-small">
+                <img src="../img/about/russel.png" alt="Russel" class="sub-section__img" width="100%" height="100%">
+            </div>
+        </section>
+
     </section>
 
 </main>

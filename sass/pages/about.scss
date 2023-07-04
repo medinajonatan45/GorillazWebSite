@@ -16,6 +16,13 @@
         }
     }
 }
+.section{
+    &__h2--space-bar{
+        font-family: h.$primary-text-font;
+        font-size: 5rem;
+        color: rgb(149, 38, 38);
+    }
+}
 .section-full{
 
     &--banner-about-2{
@@ -23,7 +30,7 @@
         background-image: url(../img/backgrounds/art-colors.jpg);
         background-size:cover;
         background-repeat: no-repeat;
-        margin-bottom: 2rem;
+        background-attachment: fixed;
         
         @include mixh.Grid-System(auto, 70% 30%, 0rem);
         @include mixh.Media-Screen(720px){height: 25rem;}
@@ -41,22 +48,92 @@
     &--about{
         background-color: h.$senary-color;
         color: white;
-        @include mixh.Grid-System(50% 50%, auto, 0rem);
+        @include mixh.Grid-System(60% 40%, auto, 0rem);
         @include mixh.Media-Screen(720px){
             @include mixh.Grid-System(100%, 50% 50%, 0rem);
         }
     }
 }
 .sub-section{
-
     &--about-img{
         background-image: url(../img/backgrounds/about.jpg);
         background-size:cover;
-        box-shadow: 2px 0px 8px h.$octonary-color;
+        box-shadow:inset 0rem 0rem 10rem h.$octonary-color;
     }
     &--about-text{
-        font-family: arial;
         padding: 3rem;
         @include mixh.Flex-System(column, center, center, nowrap, 1rem);
+    }
+    &__photo{
+        &--screen-small{
+            display: none;
+            @include mixh.Media-Screen(900px){display: block;}
+        }
+        &--screen-big{
+            @include mixh.Media-Screen(900px){display: none}
+        }
+    }
+    &__description--about{
+        @include mixh.Flex-System(column, center, flex-start, nowrap, 0rem);
+
+        &--character-1{
+            padding-left: 5vw;
+            color: white;
+        }
+        &--character-2{
+            padding-right: 5vw;
+            color: black;
+            @include mixh.Media-Screen(900px){padding-right: 0vw; padding-left: 5vw;}
+        }
+        &--character-3{
+            padding-left: 5vw;
+            color: white;
+        }
+        &--character-4{
+            padding-right: 5vw;
+            @include mixh.Media-Screen(900px){padding-right: 0vw; padding-left: 5vw;}
+        }
+    }
+    &__h2--character{
+        font-size: 3rem;
+    }
+}
+.section__medium{
+    height: 25rem;
+    width: 100%;
+    background-color: yellowgreen;
+
+    &--space-bar{
+        background-color: white;
+        @include mixh.Flex-System(row, center, center, nowrap, 0rem);
+    }
+
+    &--about-character-1{
+        background-color: h.$basic-color;
+        @include mixh.Grid-System(55% 45%, 100%, 0rem);
+        @include mixh.Media-Screen(900px){
+            @include mixh.Grid-System(100%, 50% 50%, 0rem);
+        }
+    }
+    &--about-character-2{
+        background-color: h.$quinary-color;
+        @include mixh.Grid-System(45% 55%, 100%, 0rem);
+        @include mixh.Media-Screen(900px){
+            @include mixh.Grid-System(100%, 50% 50%, 0rem);
+        }
+    }
+    &--about-character-3{
+        background-color: h.$secundary-color;
+        @include mixh.Grid-System(55% 45%, 100%, 0rem);
+        @include mixh.Media-Screen(900px){
+            @include mixh.Grid-System(100%, 50% 50%, 0rem);
+        }
+    }
+    &--about-character-4{
+        background-color: h.$quaternary-color;
+        @include mixh.Grid-System(45% 55%, 100%, 0rem);
+        @include mixh.Media-Screen(900px){
+            @include mixh.Grid-System(100%, 50% 50%, 0rem);
+        }
     }
 }
