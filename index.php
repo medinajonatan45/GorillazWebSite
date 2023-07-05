@@ -14,12 +14,11 @@ require('layout/head.html')
         <figure class="hero__figure">
             <img src="img/logos/gorillaz-white.png" alt="" class="hero__img" width="100%" height="100%">
             <figcaption class="hero__figcaption">
-                <a href="pages/about.php" class="hero__a">Enter site</a>
+                <a href="pages/home.php" class="hero__a">Enter site</a>
             </figcaption>
         </figure>
     </section>
 </section>
 
-<?php
-require('layout/footer.html')
-?>
+</body>
+</html>

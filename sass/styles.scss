@@ -4,9 +4,12 @@
 @forward 'components/section-full.scss';
 @forward 'components/section-big.scss';
 @forward 'components/sub-section.scss';
+@forward 'components/space-bar.scss';
+@forward 'components/footer.scss';
 
 // ***** Paginas ***** //
 @forward 'pages/hero.scss';
+@forward 'pages/home.scss';
 @forward 'pages/about.scss';
 
 // ***************************** Styles *********************/
@@ -16,4 +19,5 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }

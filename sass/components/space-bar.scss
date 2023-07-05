@@ -1,0 +1,10 @@
+// ***** Colores y fuentes ***** //
+@use '../tools/colors' as h;
+
+.section{
+    &__h2--space-bar{
+        font-family: h.$primary-text-font;
+        font-size: 5rem;
+        color: h.$nonary-color;
+    }
+}

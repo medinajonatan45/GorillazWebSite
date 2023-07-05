@@ -8,33 +8,8 @@ require('../layout/header-nav.html');
 ?>
 
 <main class="main">
-    <!-- Banner Pricipal About -->
-    <section class="banner banner--about">
-        <img src="../img/about/about_img.png" alt="Banner About" class="banner__img" width="100%" height="100%">
-    </section>
-    
-    <!-- Banner Secundario About -->
-    <section class="section-full section-full--banner-about-2">
 
-        <section class="section-full__text">
-            <img src="../img/logos/song_machine-white.png" alt="" class="section-full__img" width="100%" height="100%">
-        </section>
-
-        <section class="section-full__profiles">
-            <ul class="section-full__ul section-full__ul--banner-about-2">
-                <li class="section-full__li"><img src="../img/about/mini_murdoc.png" alt="Murdoc" class="section-full__img" width="100%" height="100%"></li>
-                <li class="section-full__li"><img src="../img/about/mini_noodle.png" alt="Noodle" class="section-full__img" width="100%" height="100%"></li>
-                <li class="section-full__li"><img src="../img/about/mini_2d.png" alt="2-D" class="section-full__img" width="100%" height="100%"></li>
-                <li class="section-full__li"><img src="../img/about/mini_russel.png" alt="Russel" class="section-full__img" width="100%" height="100%"></li>
-            </ul>
-        </section>
-    </section>
-    
-    <section class="section__medium section__medium--space-bar">
-        <h2 class="section__h2 section__h2--space-bar">Band</h2>
-    </section>
-
-    <section class="section-big section-big--about">
+    <section class="section-full section-full--about">
         <section class="sub-section sub-section--about-img">
             <div class="sub-section__background"></div>
         </section>
@@ -63,13 +38,21 @@ require('../layout/header-nav.html');
         </section>
     </section>
 
+    <!-- Space bar -->
+    <section class="section__medium section__medium--space-bar">
+        <h2 class="section__h2 section__h2--space-bar">Band</h2>
+    </section>
+
     <section class="section section--about">
         <section class="section__medium section__medium--about-character-1">
             <div class="sub-section__description sub-section__description--about sub-section__description--about--character-1">
                 <h2 class="sub-section__h2 sub-section__h2--character">2-D</h2>
                 <article class="sub-section__article">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                        Stuart Harold Pot (also known as 2-D) is the lead vocalist and keyboardist of Gorillaz.
+                        2D was born in West Sussex, England on May 23, 1978. 
+                        On August 15, 1997, when Stuart was 19. his life changed forever when he met his future bandmate <b>Murdoc</b>
+                        , after he was hit by Murdoc´s car. Happening again later, Murdoc then nicknamed Stuart '2-D' from his "Two Dents" in his head.
                     </p>
                 </article>
             </div>
@@ -88,7 +71,10 @@ require('../layout/header-nav.html');
                 <h2 class="sub-section__h2 sub-section__h2--character">Murdoc</h2>
                 <article class="sub-section__article">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                        Murdoc Alphonse "Faust" Niccals is the official bass player, self-proclaimed leader and founder of Gorillaz.
+                        Murdoc was born in Staffordshire, England on June 6, 1966. On August 15, 1997.
+                        Murdoc and a gang of criminals were on a crime spree in a stolen Vauxhall Astra.
+                        Their next was a music shop where 2-D was wroking at. This where 2-D and Murdoc meets.
                     </p>
                 </article>
             </div>

@@ -1,0 +1,40 @@
+// ***** Colores y fuentes ***** //
+@use '../tools/colors' as h;
+
+// // ***** Mixin: Flex, Grid and media ***** //
+@use '../tools/mixins' as mixh;
+
+// Styles: Footer
+.footer{
+    background-color: white;
+    height: 87vh;
+    @include mixh.Grid-System(100%, 25% 75%, 0rem);
+
+    &__section{
+
+        &:first-of-type{
+            font-family: h.$primary-text-font;
+            font-size: 0.9rem;
+            padding-left: 5rem;
+            @include mixh.Flex-System(column, center, flex-start, nowrap, 0rem);
+        }
+
+        &:last-of-type{
+            background-image: url(../img/backgrounds/gorillaz_baby-queen.jpg);
+            background-size: cover;
+        }
+    }
+    &__li{
+        list-style: none;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    &__a{
+        color: black;
+        text-decoration: none;
+
+        &:hover{
+            color: h.$nonary-color;
+        }
+    }
+}
