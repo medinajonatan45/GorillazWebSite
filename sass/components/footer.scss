@@ -7,7 +7,8 @@
 // Styles: Footer
 .footer{
     background-color: white;
-    height: 87vh;
+    // height: 87vh;
+    height: calc(100vh - 5rem);
     @include mixh.Grid-System(100%, 25% 75%, 0rem);
 
     &__section{

@@ -6,19 +6,20 @@
 
 // Styles: Header
 .header{
-    background-color: rgba(255, 255, 255);
-    height: 5.5rem;
+    // background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 65, 65, 0.5);
+    height: 5rem;
     width: 100%;
     position: fixed;
     @include mixh.Grid-System(100%, auto, 0rem);
     @include mixh.Media-Screen(720px){
-        @include mixh.Flex-System(row, space-between, center, wrap, 0rem);
+        @include mixh.Flex-System(row, space-evenly, center, wrap, 0rem);
     }
     z-index: 1;
 
     &__img{
         // background-color: green;
-        height: 5rem;
+        height: 4.5rem;
         object-fit: scale-down;
         // @include mixh.Media-Screen(720px){width: 80vw;}
     }
@@ -30,18 +31,19 @@
     }
     &__logo-responsive{
         display: none;
+        width: 80%;
         @include mixh.Media-Screen(720px){display: block;}
     }
 }
 .nav{
-    background-color: rgba(#ffffff, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     height: 100%;
     width: 100%;
     display: block;
 
     @include mixh.Media-Screen(720px){
         // display: none;
-        height: calc(100vh - 5.5rem);
+        height: calc(100vh);
         transform: translateX(100rem);
         transition: all 0.5s ease-in-out;
 

@@ -7,7 +7,7 @@
 // Styles: About
 .section-full{
     &--about{
-        padding-top: 5.5rem;
+        padding-top: 5rem;
         height: 100vh;
         background-color: h.$primary-color;
         color: white;
@@ -29,10 +29,17 @@
             box-shadow:inset 0rem -2rem 2rem h.$primary-color;
         }
     }
+    &__background{
+        &--about-text{
+            background-color: rgba(h.$primary-color, 0.95);
+            padding: 3rem;
+            @include mixh.Flex-System(column, center, center, nowrap, 1rem);
+        }
+    }
     &--about-text{
-        background-color: h.$primary-color;
-        padding: 3rem;
-        @include mixh.Flex-System(column, center, center, nowrap, 1rem);
+        background-image: url(../img/backgrounds/dead-black.png);
+        background-size: cover;
+        background-position: center;
     }
     &__photo{
         &--screen-small{
@@ -72,17 +79,21 @@
     height: 25rem;
     width: 100%;
     background-color: yellowgreen;
+    transition: all 0.5s ease-in-out;
 
     &--space-bar{
         background-color: white;
         @include mixh.Flex-System(row, center, center, nowrap, 0rem);
     }
-
     &--about-character-1{
         background-color: h.$basic-color;
         @include mixh.Grid-System(55% 45%, 100%, 0rem);
         @include mixh.Media-Screen(900px){
             @include mixh.Grid-System(100%, 60% 40%, 0rem);
+        }
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0rem 0rem 2rem black;
         }
     }
     &--about-character-2{
@@ -91,6 +102,10 @@
         @include mixh.Media-Screen(900px){
             @include mixh.Grid-System(100%, 60% 40%, 0rem);
         }
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0rem 0rem 2rem black;
+        }
     }
     &--about-character-3{
         background-color: h.$secundary-color;
@@ -98,12 +113,20 @@
         @include mixh.Media-Screen(900px){
             @include mixh.Grid-System(100%, 60% 40%, 0rem);
         }
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0rem 0rem 2rem black;
+        }
     }
     &--about-character-4{
         background-color: h.$quaternary-color;
         @include mixh.Grid-System(45% 55%, 100%, 0rem);
         @include mixh.Media-Screen(900px){
             @include mixh.Grid-System(100%, 60% 40%, 0rem);
+        }
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0rem 0rem 2rem black;
         }
     }
 }

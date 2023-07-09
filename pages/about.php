@@ -15,25 +15,27 @@ require('../layout/header-nav.html');
         </section>
 
         <section class="sub-section sub-section--about-text">
-            <section class="sub-section__text">
-                <article class="sub-section__article">
-                    <p>
-                    Gorillaz is a virtual band created in 1998 by <b>Damon Albarn</b> and <b>Jamie Hewlett</b>
-                    that consist of four fictional animated band members: 2-D, Murdoc Niccals,
-                    Russel Hobbs and Noodle.
-                    </p>
-                </article>
-            </section>
-            <section class="sub-section__title">
-                <h2 class="sub-section__h2">Band Members</h2>
-                <article class="sub-section__article">
-                    <ul class="sub-section__ul">
-                        <li class="sub-section__li">2-D</li>
-                        <li class="sub-section__li">Murdoc</li>
-                        <li class="sub-section__li">Noodle</li>
-                        <li class="sub-section__li">Russel</li>
-                    </ul>
-                </article>
+            <section class="sub-section__background sub-section__background--about-text">
+                <section class="sub-section__text">
+                    <article class="sub-section__article">
+                        <p>
+                        Gorillaz is a virtual band created in 1998 by <b>Damon Albarn</b> and <b>Jamie Hewlett</b>
+                        that consist of four fictional animated band members: 2-D, Murdoc Niccals,
+                        Russel Hobbs and Noodle.
+                        </p>
+                    </article>
+                </section>
+                <section class="sub-section__title">
+                    <h2 class="sub-section__h2">Band Members</h2>
+                    <article class="sub-section__article">
+                        <ul class="sub-section__ul">
+                            <li class="sub-section__li">2-D</li>
+                            <li class="sub-section__li">Murdoc</li>
+                            <li class="sub-section__li">Noodle</li>
+                            <li class="sub-section__li">Russel</li>
+                        </ul>
+                    </article>
+                </section>
             </section>
         </section>
     </section>
@@ -88,7 +90,10 @@ require('../layout/header-nav.html');
                 <h2 class="sub-section__h2 sub-section__h2--character">Noodle</h2>
                 <article class="sub-section__article">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                        Noodle is the official lead guitarist of Gorillaz. Noodle was born in Osaka, Japan on October 31, 1990.
+                        She spent a portion of her childhood in Japan as a subject of a classified Japanese super soldier project.
+                        Noodle arrived at the doorstep of Gorilaz´s studios, Kong Studios, in 198, in a FedEx crate.
+                        Once inside the studio, she sprung out of the box performing a guitar solo.
                     </p>
                 </article>
             </div>
@@ -107,7 +112,10 @@ require('../layout/header-nav.html');
                 <h2 class="sub-section__h2 sub-section__h2--character">Russel</h2>
                 <article class="sub-section__article">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis expedita praesentium maxime totam distinctio quae ipsa eligendi vero in, voluptates veritatis ratione quas ducimus neque nemo nam omnis qui.
+                        Russel Hobbs (also known as Russ) is the official drummer of Gorillaz.
+                        Russel was born in New York, USA. One rainly night outside a 7-Eleven store, Russel´s friends were killed in a drive-by shooting by a 
+                        gang driving a black Humvee. Spirits of Russel's best friend Del the Ghost Rapper possesed Russel.
+                        After the incident, he was sent to the UK where he first encountered Murdoc.
                     </p>
                 </article>
             </div>

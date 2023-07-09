@@ -21,6 +21,9 @@
     &__ul{
         list-style: none;
     }
+    &__li{
+        margin-bottom: 0.5rem;
+    }
     &__img{
         object-fit: scale-down;
         // background-color: brown;
