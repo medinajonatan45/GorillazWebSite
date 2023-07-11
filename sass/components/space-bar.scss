@@ -1,10 +1,15 @@
 // ***** Colores y fuentes ***** //
 @use '../tools/colors' as h;
 
+// // ***** Mixin: Flex, Grid and media ***** //
+@use '../tools/mixins' as mixh;
+
 .section{
     &__h2--space-bar{
         font-family: h.$primary-text-font;
         font-size: 5rem;
         color: h.$nonary-color;
+
+        @include mixh.Media-Screen(720px){font-size: 3rem;}
     }
 }

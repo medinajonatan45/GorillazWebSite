@@ -1,5 +1,5 @@
 <?php
-$PageTitle = "Home";
+$PageTitle = "Gorillaz | Home";
 
 // Head --> body
 require('../layout/head.html');

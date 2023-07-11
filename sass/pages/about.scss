@@ -21,7 +21,7 @@
 }
 .sub-section{
     &--about-img{
-        background-image: url(../img/backgrounds/about.jpg);
+        background-image: url(../img/about/about.jpg);
         background-size:cover;
         box-shadow:inset -6rem 0rem 3rem h.$primary-color;
         @include mixh.Media-Screen(720px){
@@ -37,7 +37,7 @@
         }
     }
     &--about-text{
-        background-image: url(../img/backgrounds/dead-black.png);
+        background-image: url(../img/about/dead-black.png);
         background-size: cover;
         background-position: center;
     }

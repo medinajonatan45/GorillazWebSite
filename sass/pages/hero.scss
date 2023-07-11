@@ -38,14 +38,21 @@
         font-weight: bold;
         text-decoration: none;
         color: white;
-        transition:all 0.3s ease-in-out;
+        animation-name: Pulse-Animation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
 
         &:hover{
-            transform: scale(1.1);
+            transition:all 0.3s ease-in-out;
+            color: h.$quaternary-color;
         }
     }
 }
-
+@keyframes Pulse-Animation {
+    100%{transform: scale(1);}
+    50%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
 .hero__section{
     &--img{
         // background-color: yellow;
