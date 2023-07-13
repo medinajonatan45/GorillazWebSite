@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(255, 65, 65, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 5rem;
   width: 100%;
   position: fixed;
@@ -44,7 +44,7 @@
 }
 
 .nav {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 100%;
   width: 100%;
   display: block;
@@ -77,7 +77,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 0rem;
+    gap: 10%;
   }
 }
 .nav__li {
@@ -551,6 +551,8 @@
   background-color: white;
   font-family: arial;
   font-size: 1.1rem;
+}
+.sub-section--discography-text--right {
   text-align: right;
   padding-right: 20%;
   display: flex;
@@ -559,6 +561,21 @@
   align-items: flex-end;
   flex-wrap: nowrap;
   gap: 0rem;
+}
+.sub-section--discography-text--left {
+  text-align: left;
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0rem;
+}
+@media (max-width: 720px) {
+  .sub-section--discography-text--left {
+    padding-left: 10%;
+  }
 }
 .sub-section__img--album-img {
   filter: drop-shadow(10px 10px 10px rgb(11, 11, 11));
@@ -570,7 +587,7 @@
 }
 @media (max-width: 720px) {
   .sub-section__h2--discography {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .sub-section__h2--album-text {
@@ -616,8 +633,13 @@
     grid-gap: 0rem;
   }
 }
+.section-full--discography-2 {
+  filter: grayscale(90%);
+}
 .section-full__album {
   background-color: rgb(11, 11, 11);
+  background-size: cover;
+  background-attachment: fixed;
   padding: 7rem 0rem;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -628,20 +650,45 @@
   .section-full__album {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 35% 65%;
+    grid-template-rows: 40% 60%;
     grid-gap: 0rem;
     padding: 3rem 1rem 0rem 1rem;
   }
 }
 .section-full__album--1 {
   background-image: url(../img/backgrounds/white-texture.jpg);
-  background-size: cover;
-  background-attachment: fixed;
 }
 .section-full__album--2 {
   background-image: url(../img/backgrounds/blue-texture.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  color: white;
+}
+.section-full__album--3 {
+  background-image: url(../img/backgrounds/orange-texture.jpg);
+  color: white;
+}
+.section-full__album--4 {
+  background-image: url(../img/backgrounds/red-texture.jpg);
+  color: white;
+}
+.section-full__album--5 {
+  background-image: url(../img/backgrounds/brown-texture.jpg);
+  color: white;
+}
+.section-full__album--6 {
+  background-image: url(../img/backgrounds/pink-texture.jpg);
+}
+.section-full__album--7 {
+  background-image: url(../img/backgrounds/aqua-texture.jpg);
+}
+.section-full__album--8 {
+  background-image: url(../img/backgrounds/wall-texture.jpg);
+}
+.section-full__album--9 {
+  background-image: url(../img/backgrounds/vino-texture.jpg);
+  color: white;
+}
+.section-full__album--10 {
+  background-image: url(../img/backgrounds/woven-texture.jpg);
   color: white;
 }
 

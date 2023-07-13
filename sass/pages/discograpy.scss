@@ -27,8 +27,6 @@
     }
 }
 .sub-section{
-    // background-color: red;
-
     &--discography{
         color: white;
         font-family: h.$primary-text-font;
@@ -40,9 +38,18 @@
         background-color: white;
         font-family: arial;
         font-size: 1.1rem;
-        text-align: right;
-        padding-right: 20%;
-        @include mixh.Flex-System(column, center, flex-end, nowrap, 0rem);
+
+        &--right{
+            text-align: right;
+            padding-right: 20%;
+            @include mixh.Flex-System(column, center, flex-end, nowrap, 0rem);
+        }
+        &--left{
+            text-align: left;
+            padding-left: 20%;
+            @include mixh.Flex-System(column, center, flex-start, nowrap, 0rem);
+            @include mixh.Media-Screen(720px){padding-left: 10%;}
+        }
     }
     &__img{
         &--album-img{
@@ -55,7 +62,7 @@
             font-family: arial;
             text-shadow: 0.1rem 0.1rem 0.1rem black;
             
-            @include mixh.Media-Screen(720px){font-size: 1.5rem;}
+            @include mixh.Media-Screen(720px){font-size: 2rem;}
         }
         &--album-text{
             font-size: 2.5rem;
@@ -65,9 +72,6 @@
                 text-shadow: 0.1rem 0.1rem 0.1rem black;
             }
         }
-    }
-    &__album-img{
-        // background-color: yellow;
     }
     &__album-text{
         font-family: arial;
@@ -90,26 +94,30 @@
         @include mixh.Media-Screen(720px){
             @include mixh.Grid-System(100%, 50% 50%, 0rem);
         }
+        &-2{
+            filter:grayscale(90%);
+        }
     }
     &__album{
         background-color: h.$octonary-color;
+        background-size: cover;
+        background-attachment: fixed;
         padding: 7rem 0rem;
         @include mixh.Grid-System(50% 50%, 100%, 0rem);
         @include mixh.Media-Screen(720px){
-            @include mixh.Grid-System(100%, 35% 65%, 0rem);
+            @include mixh.Grid-System(100%, 40% 60%, 0rem);
             padding: 3rem 1rem 0rem 1rem;
         }
 
-        &--1{
-            background-image: url(../img/backgrounds/white-texture.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        &--2{
-            background-image: url(../img/backgrounds/blue-texture.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-        }
+        &--1{background-image: url(../img/backgrounds/white-texture.jpg);}
+        &--2{background-image: url(../img/backgrounds/blue-texture.jpg); color: white;}
+        &--3{background-image: url(../img/backgrounds/orange-texture.jpg); color: white;}
+        &--4{background-image: url(../img/backgrounds/red-texture.jpg); color: white;}
+        &--5{background-image: url(../img/backgrounds/brown-texture.jpg); color: white;}
+        &--6{background-image: url(../img/backgrounds/pink-texture.jpg);}
+        &--7{background-image: url(../img/backgrounds/aqua-texture.jpg);}
+        &--8{background-image: url(../img/backgrounds/wall-texture.jpg);}
+        &--9{background-image: url(../img/backgrounds/vino-texture.jpg); color: white;}
+        &--10{background-image: url(../img/backgrounds/woven-texture.jpg); color: white;}
     }
 }
