@@ -65,6 +65,10 @@
     &__li{
         list-style: none;
         // background-color:green;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: all 0.2s ease-in-out;
+        &:hover{transform: scale(1.2);}
 
         &--logo{
             display: block;
@@ -76,5 +80,10 @@
         color: black;
         text-decoration: none;
         font-family: h.$primary-text-font;
+
+        &:hover{
+            color: h.$nonary-color;
+            text-shadow: 0rem 0rem 0.5rem h.$quaternary-color;
+        }
     }
 }

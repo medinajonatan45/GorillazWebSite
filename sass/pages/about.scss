@@ -9,8 +9,8 @@
     &--about{
         padding-top: 5rem;
         height: 100vh;
-        background-color: h.$primary-color;
-        color: white;
+        background-color: white;
+        color: black;
 
         @include mixh.Grid-System(60% 40%, auto, 0rem);
         @include mixh.Media-Screen(720px){
@@ -23,15 +23,15 @@
     &--about-img{
         background-image: url(../img/about/about.jpg);
         background-size:cover;
-        box-shadow:inset -6rem 0rem 3rem h.$primary-color;
+        box-shadow:inset -6rem 0rem 3rem white;
         @include mixh.Media-Screen(720px){
             background-position: center;
-            box-shadow:inset 0rem -2rem 2rem h.$primary-color;
+            box-shadow:inset 0rem -2rem 2rem white;
         }
     }
     &__background{
         &--about-text{
-            background-color: rgba(h.$primary-color, 0.95);
+            background-color: rgba(white, 0.90);
             padding: 3rem;
             @include mixh.Flex-System(column, center, center, nowrap, 1rem);
         }

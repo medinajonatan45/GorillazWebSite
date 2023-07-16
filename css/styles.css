@@ -82,6 +82,12 @@
 }
 .nav__li {
   list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.nav__li:hover {
+  transform: scale(1.2);
 }
 .nav__li--logo {
   display: block;
@@ -95,6 +101,10 @@
   color: black;
   text-decoration: none;
   font-family: arial black;
+}
+.nav__a:hover {
+  color: #7B0000;
+  text-shadow: 0rem 0rem 0.5rem #FFFB73;
 }
 
 .banner {
@@ -173,13 +183,10 @@
   grid-gap: 0rem;
 }
 .footer__section:first-of-type {
-  font-family: arial black;
-  font-size: 0.9rem;
-  padding-left: 5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
   gap: 0rem;
 }
@@ -187,17 +194,46 @@
   background-image: url(../img/footer/gorillaz_baby-queen.jpg);
   background-size: cover;
 }
+.footer__ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5%;
+}
 .footer__li {
   list-style: none;
-  display: block;
-  margin-bottom: 0.5rem;
 }
 .footer__a {
-  color: black;
+  background-color: white;
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-size: 1.2rem;
+  height: 2.3rem;
+  width: 2.3rem;
+  border: 0.15rem solid rgba(0, 0, 0, 0.8);
+  border-radius: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0rem;
+  transition: all 0.3s ease-in-out;
 }
 .footer__a:hover {
-  color: #7B0000;
+  background-color: rgb(11, 11, 11);
+  color: white;
+  border-color: rgb(11, 11, 11);
+  transform: scale(2.5) rotate(360deg);
+}
+.footer__a:active {
+  background-color: #E90832;
+  color: white;
+  border-color: #E90832;
 }
 
 .hero {
@@ -325,8 +361,8 @@
 .section-full--about {
   padding-top: 5rem;
   height: 100vh;
-  background-color: #005c81;
-  color: white;
+  background-color: white;
+  color: black;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: auto;
@@ -345,16 +381,16 @@
 .sub-section--about-img {
   background-image: url(../img/about/about.jpg);
   background-size: cover;
-  box-shadow: inset -6rem 0rem 3rem #005c81;
+  box-shadow: inset -6rem 0rem 3rem white;
 }
 @media (max-width: 720px) {
   .sub-section--about-img {
     background-position: center;
-    box-shadow: inset 0rem -2rem 2rem #005c81;
+    box-shadow: inset 0rem -2rem 2rem white;
   }
 }
 .sub-section__background--about-text {
-  background-color: rgba(0, 92, 129, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 3rem;
   display: flex;
   flex-direction: column;

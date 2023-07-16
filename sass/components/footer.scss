@@ -12,30 +12,44 @@
     @include mixh.Grid-System(100%, 25% 75%, 0rem);
 
     &__section{
-
         &:first-of-type{
-            font-family: h.$primary-text-font;
-            font-size: 0.9rem;
-            padding-left: 5rem;
-            @include mixh.Flex-System(column, center, flex-start, nowrap, 0rem);
+            @include mixh.Flex-System(row, center, center, nowrap, 0rem);
         }
-
         &:last-of-type{
             background-image: url(../img/footer/gorillaz_baby-queen.jpg);
             background-size: cover;
         }
     }
+    &__ul{
+        width: 100%;
+        @include mixh.Flex-System(row, center, center, nowrap, 5%);
+    }
     &__li{
         list-style: none;
-        display: block;
-        margin-bottom: 0.5rem;
     }
     &__a{
-        color: black;
+        background-color: white;
         text-decoration: none;
+        color: rgba(0,0,0,0.8);
+        display: block;
+        font-size: 1.2rem;
+        height: 2.3rem;
+        width: 2.3rem;
+        border: 0.15rem solid rgba(0,0,0,0.8);
+        border-radius: 20rem;
+        @include mixh.Flex-System(row, center, center, nowrap, 0rem);
+        transition: all 0.3s ease-in-out;
 
         &:hover{
-            color: h.$nonary-color;
+            background-color:h.$octonary-color;
+            color: white;
+            border-color:h.$octonary-color;
+            transform: scale(2.5) rotate(360deg);
+        }
+        &:active{
+            background-color:h.$senary-color;
+            color: white;
+            border-color:h.$senary-color;
         }
     }
 }
