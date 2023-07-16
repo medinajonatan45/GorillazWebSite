@@ -1,0 +1,33 @@
+// ***** Colores y fuentes ***** //
+@use '../tools/colors' as h;
+
+// // ***** Mixin: Flex, Grid and media ***** //
+@use '../tools/mixins' as mixh;
+
+// Styles: Gallery
+.section{
+    &--gallery{
+        background-color: orange;
+        padding-top: 5rem;
+    }
+}
+.sub-section{
+    &__figure{
+        &--gallery{
+            width: 15rem;
+            height: 20rem;
+            background-color: yellow;
+        }
+    }
+    &__figcaption{
+        background-color: green;
+    }
+    &--gallery-title{
+        background-color: blue;
+    }
+    &--gallery-imgs{
+        background-color: red;
+        padding: 2rem 0rem;
+        @include mixh.Flex-System(row, center, center, wrap, 2rem);
+    }
+}

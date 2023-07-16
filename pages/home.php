@@ -10,7 +10,7 @@ require('../layout/header-nav.html');
 <main class="main">
     <!-- Banner Pricipal About -->
     <section class="banner banner--about">
-        <img src="../img/about/about_img.png" alt="Banner About" class="banner__img" width="100%" height="100%">
+        <img src="../img/home/home_img.png" alt="Banner About" class="banner__img" width="100%" height="100%">
     </section>
     
     <!-- Banner Secundario About -->
@@ -22,10 +22,10 @@ require('../layout/header-nav.html');
 
         <section class="section-full__profiles">
             <ul class="section-full__ul section-full__ul--banner-about-2">
-                <li class="section-full__li"><img src="../img/about/mini_murdoc.png" alt="Murdoc" class="section-full__img" width="100%" height="100%"></li>
-                <li class="section-full__li"><img src="../img/about/mini_noodle.png" alt="Noodle" class="section-full__img" width="100%" height="100%"></li>
-                <li class="section-full__li"><img src="../img/about/mini_2d.png" alt="2-D" class="section-full__img" width="100%" height="100%"></li>
-                <li class="section-full__li"><img src="../img/about/mini_russel.png" alt="Russel" class="section-full__img" width="100%" height="100%"></li>
+                <li class="section-full__li"><img src="../img/home/mini_murdoc.png" alt="Murdoc" class="section-full__img" width="100%" height="100%"></li>
+                <li class="section-full__li"><img src="../img/home/mini_noodle.png" alt="Noodle" class="section-full__img" width="100%" height="100%"></li>
+                <li class="section-full__li"><img src="../img/home/mini_2d.png" alt="2-D" class="section-full__img" width="100%" height="100%"></li>
+                <li class="section-full__li"><img src="../img/home/mini_russel.png" alt="Russel" class="section-full__img" width="100%" height="100%"></li>
             </ul>
         </section>
     </section>

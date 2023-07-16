@@ -41,9 +41,9 @@
         transition: all 0.3s ease-in-out;
 
         &:hover{
-            background-color:h.$octonary-color;
+            background-color:h.$nonary-color;
             color: white;
-            border-color:h.$octonary-color;
+            border-color:h.$nonary-color;
             transform: scale(2.5) rotate(360deg);
         }
         &:active{

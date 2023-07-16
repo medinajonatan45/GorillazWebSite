@@ -36,7 +36,7 @@
     }
 }
 .nav{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
     height: 100%;
     width: 100%;
     display: block;
@@ -71,8 +71,10 @@
         &:hover{transform: scale(1.2);}
 
         &--logo{
+            transition: all 0.2s ease-in-out;
             display: block;
             @include mixh.Media-Screen(720px){display: none;}
+            &:hover{transform: scale(1.2);}
         }
     }
     &__a{
