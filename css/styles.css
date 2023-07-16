@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
   height: 5rem;
   width: 100%;
   position: fixed;
@@ -44,7 +44,7 @@
 }
 
 .nav {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
   display: block;
@@ -239,6 +239,16 @@
   color: white;
   border-color: #E90832;
 }
+.footer__a--home {
+  height: 4rem;
+  width: 4rem;
+  border: none;
+}
+.footer__a--home:hover {
+  background-color: transparent;
+  border: none;
+  transform: scale(1.8) rotate(360deg);
+}
 
 html::-webkit-scrollbar {
   width: 0.5rem;
@@ -261,6 +271,12 @@ html::-webkit-scrollbar-thumb {
 }
 .hero__figcaption {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0rem;
 }
 .hero__img {
   width: 100%;
@@ -276,6 +292,7 @@ html::-webkit-scrollbar-thumb {
 .hero__a {
   font-family: arial black;
   display: block;
+  width: 15rem;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -283,10 +300,26 @@ html::-webkit-scrollbar-thumb {
   animation-name: Pulse-Animation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  position: relative;
 }
-.hero__a:hover {
-  transition: all 0.3s ease-in-out;
-  color: #FFFB73;
+.hero__a svg {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+.hero__a path {
+  transition: stroke-dashoffset 300ms linear;
+  stroke-width: 1;
+  stroke: #FFFB73;
+  fill: none;
+  stroke-linecap: round;
+}
+.hero__a:hover path {
+  stroke-dashoffset: 0;
 }
 
 @keyframes Pulse-Animation {
@@ -377,7 +410,7 @@ html::-webkit-scrollbar-thumb {
 .section-full--about {
   padding-top: 5rem;
   height: 100vh;
-  background-color: white;
+  background-color: black;
   color: black;
   display: grid;
   grid-template-columns: 60% 40%;
@@ -397,16 +430,17 @@ html::-webkit-scrollbar-thumb {
 .sub-section--about-img {
   background-image: url(../img/about/about.jpg);
   background-size: cover;
-  box-shadow: inset -6rem 0rem 3rem white;
+  box-shadow: inset -6rem 0rem 3rem black;
 }
 @media (max-width: 720px) {
   .sub-section--about-img {
     background-position: center;
-    box-shadow: inset 0rem -2rem 2rem white;
+    box-shadow: inset 0rem -2rem 2rem black;
   }
 }
 .sub-section__background--about-text {
-  background-color: rgba(255, 255, 255, 0.9);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -416,9 +450,11 @@ html::-webkit-scrollbar-thumb {
   gap: 1rem;
 }
 .sub-section--about-text {
-  background-image: url(../img/about/dead-black.png);
-  background-size: cover;
+  background-image: url(../img/about/triangles.png);
+  background-size: contain;
   background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 1rem 0rem 1rem black;
 }
 .sub-section__photo--screen-small {
   display: none;
@@ -745,30 +781,35 @@ html::-webkit-scrollbar-thumb {
 }
 
 .section--gallery {
-  background-color: orange;
-  padding-top: 5rem;
+  padding: 5rem 0rem;
 }
 
 .sub-section__figure--gallery {
   width: 15rem;
   height: 20rem;
-  background-color: yellow;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.sub-section__figure--gallery:hover {
+  transform: scale(1.1);
 }
 .sub-section__figcaption {
-  background-color: green;
+  text-align: center;
+  font-family: arial;
 }
 .sub-section--gallery-title {
-  background-color: blue;
+  font-family: arial;
+  padding: 1rem 10%;
+  font-size: 2rem;
 }
 .sub-section--gallery-imgs {
-  background-color: red;
   padding: 2rem 0rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 * {

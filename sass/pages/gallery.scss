@@ -7,8 +7,7 @@
 // Styles: Gallery
 .section{
     &--gallery{
-        background-color: orange;
-        padding-top: 5rem;
+        padding: 5rem 0rem;
     }
 }
 .sub-section{
@@ -16,18 +15,23 @@
         &--gallery{
             width: 15rem;
             height: 20rem;
-            background-color: yellow;
+            margin-bottom: 0.5rem;
+            transition: all 0.2s ease-in-out;
+
+            &:hover{transform: scale(1.1);}
         }
     }
     &__figcaption{
-        background-color: green;
+        text-align: center;
+        font-family: arial;
     }
     &--gallery-title{
-        background-color: blue;
+        font-family: arial;
+        padding: 1rem 10%;
+        font-size: 2rem;
     }
     &--gallery-imgs{
-        background-color: red;
         padding: 2rem 0rem;
-        @include mixh.Flex-System(row, center, center, wrap, 2rem);
+        @include mixh.Flex-System(row, center, center, wrap, 2.5rem);
     }
 }

@@ -51,5 +51,17 @@
             color: white;
             border-color:h.$senary-color;
         }
+
+        &--home{
+            height: 4rem;
+            width: 4rem;
+            border: none;
+
+            &:hover{
+                background-color:transparent;
+                border:none;
+                transform: scale(1.8) rotate(360deg);
+            }
+        }
     }
 }

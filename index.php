@@ -1,5 +1,6 @@
 <?php
 $PageTitle = "Gorillaz Web Site";
+$ICO_route = "img/ico/favicon.ico";
 $CSS_route = "css/styles.css";
 
 require('layout/head.html')
@@ -14,11 +15,14 @@ require('layout/head.html')
         <figure class="hero__figure">
             <img src="img/logos/gorillaz-white.png" alt="" class="hero__img" width="100%" height="100%">
             <figcaption class="hero__figcaption">
-                <a href="pages/home.php" class="hero__a">Enter site</a>
+                <a href="pages/home.php" class="hero__a marker">Enter site</a>
             </figcaption>
         </figure>
     </section>
 </section>
-
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<!-- Animation -->
+<script src="js/animation-hero.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     &--about{
         padding-top: 5rem;
         height: 100vh;
-        background-color: white;
+        background-color: black;
         color: black;
 
         @include mixh.Grid-System(60% 40%, auto, 0rem);
@@ -23,23 +23,26 @@
     &--about-img{
         background-image: url(../img/about/about.jpg);
         background-size:cover;
-        box-shadow:inset -6rem 0rem 3rem white;
+        box-shadow:inset -6rem 0rem 3rem black;
         @include mixh.Media-Screen(720px){
             background-position: center;
-            box-shadow:inset 0rem -2rem 2rem white;
+            box-shadow:inset 0rem -2rem 2rem black;
         }
     }
     &__background{
         &--about-text{
-            background-color: rgba(white, 0.90);
+            color:white;
+            background-color: rgba(black, 0.5);
             padding: 3rem;
             @include mixh.Flex-System(column, center, center, nowrap, 1rem);
         }
     }
     &--about-text{
-        background-image: url(../img/about/dead-black.png);
-        background-size: cover;
+        background-image: url(../img/about/triangles.png);
+        background-size:contain;
         background-position: center;
+        background-attachment: fixed;
+        box-shadow: inset 1rem 0rem 1rem black;
     }
     &__photo{
         &--screen-small{

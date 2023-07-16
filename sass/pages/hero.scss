@@ -17,6 +17,7 @@
     }
     &__figcaption{
         text-align: center;
+        @include mixh.Flex-System(row, center, center, nowrap, 0rem);
     }
     &__img{
         width: 100%;
@@ -34,6 +35,7 @@
     &__a{
         font-family: h.$primary-text-font;
         display: block;
+        width: 15rem;
         font-size: 1.5rem;
         font-weight: bold;
         text-decoration: none;
@@ -41,11 +43,27 @@
         animation-name: Pulse-Animation;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+        position: relative;
 
-        &:hover{
-            transition:all 0.3s ease-in-out;
-            color: h.$quaternary-color;
+        & svg {
+            position: absolute;
+            left: 0;
+            top: -50%;
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+            pointer-events: none;
         }
+        & path{
+            transition: stroke-dashoffset 300ms linear;
+          stroke-width: 1.0;
+          stroke: h.$quaternary-color;
+          fill: none;
+          stroke-linecap: round;
+        }
+        &:hover path{
+          stroke-dashoffset: 0;
+        } 
     }
 }
 @keyframes Pulse-Animation {
