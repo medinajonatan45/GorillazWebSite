@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Medina Arcos Jonatan Ruben">
-    <meta name="description" content="Gorillaz Web Site: Sitio web de la banda Gorillaz realizado con base a la metodología BEM y las herramientas de SASS.">
-    <!-- Icon -->
-    <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/2e5a2a291a.js" crossorigin="anonymous"></script>
-    <title>Gorillaz Web Site</title>
-</head>
-<body>
+<?php
+$ICO_route = 'img/ico/favicon.ico';
+$CSS_route = 'css/styles.css';
+
+// Head --> body
+require('layout/head.html');
+?>
 <section class="hero">
     <section class="hero__section hero__section--img">
         <img src="img/hero/hero_img.png" alt="Gorillaz Portada" class="hero__img hero__img--img" width="100%" height="100%">

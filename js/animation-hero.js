@@ -17,7 +17,7 @@ jQuery(function () {
      // Also providing attrs for width and height of the svg element
      $(svg)
        .css({
-         width: 70,
+         width: 50,
          height: height,
          transform:
            "scale(" + (2 * widthGain * width) / height + "," + heightGain + ")"
